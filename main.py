@@ -1,11 +1,13 @@
 from screen import Display
-from paddle import Paddle
+from paddle import User, Computer
 
 screen = Display()
 screen.lines()
 
-paddle = Paddle()
-screen.exit()
+user = User()
+user.up()
+user.down()
 
-paddle.up()
-paddle.down()
+computer = Computer()
+
+screen.exit()

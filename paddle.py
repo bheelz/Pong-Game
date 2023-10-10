@@ -1,6 +1,6 @@
 from turtle import Turtle, Screen
 
-class Paddle:
+class User:
 
     def __init__(self):
         self.turtle = Turtle()
@@ -26,3 +26,16 @@ class Paddle:
         y = self.turtle.ycor()  # Get current y-coordinate
         y -= 40  # Decrease y-coordinate
         self.turtle.sety(y)  # Set new y-coordinate
+
+class Computer:
+
+    def __init__(self):
+        self.turtle = Turtle()
+        self.turtle.penup()
+        self.turtle.color("white")
+        self.turtle.shape("square")
+        self.turtle.speed("fastest")
+        self.turtle.shapesize(stretch_wid=5, stretch_len=1)
+        self.turtle.setx(390)
+        self.screen = Screen()
+        
