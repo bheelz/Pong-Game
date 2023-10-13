@@ -9,7 +9,7 @@ class User:
         self.turtle.shape("square")
         self.turtle.speed("fastest")
         self.turtle.shapesize(stretch_wid=5, stretch_len=1)
-        self.turtle.setx(-400)
+        self.turtle.setx(-390)
         self.screen = Screen()
         
         # Register keypress events and start listening
@@ -36,6 +36,6 @@ class Computer:
         self.turtle.shape("square")
         self.turtle.speed("fastest")
         self.turtle.shapesize(stretch_wid=5, stretch_len=1)
-        self.turtle.setx(390)
+        self.turtle.setx(380)
         self.screen = Screen()
         
