@@ -2,20 +2,24 @@ from screen import Display
 from ball import Ball
 from paddle import User, Computer
 
-#Screen
+# Screen
 screen = Display()
 screen.lines()
 screen.display_scores()
 
-#User
+# User
 user = User()
 user.up()
 user.down()
 
-#Computer
+# Computer
 computer = Computer()
 
-#Ball
+# Ball
 ball = Ball()
+
+game_is_on = True
+while game_is_on:
+    ball.move_ball()
 
 screen.exit()
